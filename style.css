@@ -1,0 +1,413 @@
+/* Global styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f7f7f7;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2em 1em;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Header styles */
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+	padding: 1em 0;
+}
+
+header img {
+	display: block;
+	border-radius: 50%;
+	max-width: 100%;
+	margin-bottom: 0.5em;
+}
+
+header h1 {
+	font-size: 2em;
+	margin-bottom: 0.25em;
+}
+
+header p {
+	font-size: 1.2em;
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+header nav {
+	margin-top: 1em;
+}
+
+header ul {
+	display: block;
+	list-style: none;
+	text-align: center;
+}
+
+header li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contact-icon img {
+  height: 25px;
+  width: auto;
+}
+
+.contact-text {
+  font-size: 12px;
+}
+
+/* Main content styles */
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #aaa;
+}
+
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+
+section {
+	margin-bottom: 2em;
+}
+
+section h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+section ul {
+	list-style: none;
+}
+
+section li {
+	margin-bottom: 1em;
+}
+
+section li .date {
+	font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+/* Education section styles */
+
+section.education li .institution {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+section.education li .degree {
+	font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+/* Experience section styles */
+
+section.experience li .position {
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+section.experience li .company {
+	font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+section.experience li .position, section.experience li .company {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+section.experience li .company-icon img {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 0.5em;
+  /* width: 180;
+  height: auto; */
+}
+
+/* Projects section styles */
+
+section.projects li {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+li .project-icon {
+	flex: 0 0 50px;
+	margin-right: 1em;
+}
+
+li .project-icon img {
+	display: block;
+	border-radius: 50%;
+	max-width: 100%;
+}
+
+li .project-details {
+	flex: 1;
+}
+
+/* Contact section styles */
+
+section.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+section.contact p {
+	margin-bottom: 1em;
+}
+
+section.contact .contact-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contact-button {
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	border-radius: 0.5em;
+	margin: 0.5em;
+	text-decoration: none;
+}
+
+.contact-button:hover {
+	background-color: #444;
+}
+
+/* Footer styles */
+
+footer {
+background-color: #333;
+color: #fff;
+padding: 1em 0;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 0.5em;
+}
+
+footer a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+    
+    header img {
+        margin-bottom: 0;
+    }
+    
+    header h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+    
+    header p {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    
+    header nav {
+        margin-top: 0;
+    }
+    
+    header ul {
+        display: flex;
+    }
+    
+    header li {
+        margin-right: 2em;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section {
+        flex: 1;
+        margin-right: 2em;
+    }
+    
+    section:last-of-type {
+        margin-right: 0;
+    }
+    
+    section h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    section ul {
+        margin-left: 1em;
+    }
+    
+    section li {
+        margin-bottom: 0.5em;
+    }
+    
+    section li .date {
+        margin-bottom: 0;
+    }
+    
+    section.experience li {
+        display: block;
+    }
+    
+    section.experience li .position, section.experience li .company {
+        margin-right: 0;
+    }
+    
+    section.experience li .company-icon {
+        flex: 0 0 100px;
+        margin-right: 1em;
+    }
+    
+    section.experience li .company-icon img {
+        margin-bottom: 0;
+    }
+    
+    section.projects li {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    li .project-details {
+        flex: 1;
+    }
+    
+    .contact-button {
+        padding: 0.75em 1.5em;
+        font-size: 1.5em;
+        border-radius: 1em;
+        margin: 1em;
+    }
+}
